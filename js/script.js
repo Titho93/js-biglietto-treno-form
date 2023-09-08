@@ -1,6 +1,4 @@
-/* 
-Creare un input ed verificarne il funzionamento
-*/
+
 const ticket = document.querySelector('#ticket');
 const nome = document.getElementById('input-text1');
 const kilometres = document.getElementById('input-text2');
@@ -19,13 +17,13 @@ button1.addEventListener('click', function(){
   const offer = age.value;
   const seat = Math.floor((Math.random() * 10) + 1);
   const cpcode = Math.floor((Math.random() * 10000) + 1);
-  
-  if(age == 'Minorenne'){
-    price = price - (20 / 100 * price) 
-  }else if(age == 'Over65'){
-    price = price - (40 / 100 * price) 
-  } 
 
+  if(offer == 'minorenne'){
+    price = price - (20 / 100 * price) 
+  }else if(offer == 'over65'){
+    price = price - (40 / 100 * price)  
+  }
+  
   document.querySelector('.t-name').innerHTML = name;
   document.querySelector('.t-offer').innerHTML = offer;
   document.querySelector('.t-seat').innerHTML = seat;
@@ -34,9 +32,7 @@ button1.addEventListener('click', function(){
 });
 
 button2.addEventListener('click', function(){
-  ticket.classList.remove('active'); 
-
+  ticket.classList.remove('active');
 });
-
 
 
