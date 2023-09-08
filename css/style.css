@@ -1,8 +1,45 @@
+.yellow {
+  background-color: yellow;
+}
 
+.grey {
+  background-color: grey;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.white {
+  background-color: white;
+}
 
 #ticket {
   display: none;
 }
+
+#ticket .col-4 {
+  background-color: grey;
+  height: 200px;
+  color: white;
+  font-size: 25px;
+  border: 5px solid white;
+}
+
+#ticket .col {
+  border-top: 5px solid grey;
+  border-bottom: 5px solid grey;
+  font-size: 25px;
+  color: red;
+  background-color: white;
+}
+
+#ticket .col h4,
+#ticket .col-4 h4 {
+  padding-top: 50px;
+  color: black;
+}
+
 
 #ticket.active {
   display: flex;
