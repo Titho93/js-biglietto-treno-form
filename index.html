@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Css  -->
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <head>
+    <!-- Css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biglietto Treno</title>
-</head>
-<body>
-
-  <div class="container">
-      <div class="row">
-        <div class="col-3 mb-3">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biglietto Treno</title>
+  </head>
+  <body>
+    <div class="container p-5 text-center ">
+      <h1>Calcola il prezzo del tuo biglietto</h1>
+      <div class="row py-5 ">
+        <div class="col-4 offset-1  mb-3">
           <label for="Name" class="form-label">Nome e Cognome</label>
           <input type="text" class="form-control" id="input-text1" placeholder="">
         </div>
@@ -31,37 +31,35 @@
             <option value="over65">Over 65</option>
           </select>
         </div>
-        <div class="col-4  mb-3">
+        <div class="col-4 offset-4 pt-4 mb-3">
           <button id="btn-1" class="btn btn-primary ">Genera</button>
           <button id="btn-2" class="btn btn-primary ">Annulla</button>
         </div>
       </div>
-  </div>
-    
-  <div class="container">
-    <div id="ticket" class="row">
-      <div class="col">Nome
-        <h4 class="t-name"></h4>
+    </div>  
+    <div class="container p-3">
+      <h1>Il tuo biglietto</h1>
+      <div id="ticket" class="row mt-5">
+        <div class="col">Nome
+          <h4 class="t-name"></h4>
+        </div>
+        <div class="col">Offerta
+          <h4 class="t-offer"></h4>
+        </div>
+        <div class="col">Carrozza
+          <h4 class="t-seat"></h4>
+        </div>
+        <div class="col">Codice Cp
+          <h4 class="t-cp"></h4>
+        </div>
+        <div class="col">Costo Biglietto
+          <h4 class="t-price"></h4>
+        </div>
+      
       </div>
-      <div class="col">Offerta
-        <h4 class="t-offer"></h4>
-      </div>
-      <div class="col">Carrozza
-        <h4 class="t-seat"></h4>
-      </div>
-      <div class="col">Codice Cp
-        <h4 class="t-cp"></h4>
-      </div>
-      <div class="col">Costo Biglietto
-        <h4 class="t-price"></h4>
-      </div>
-
     </div>
-  </div>
-
-
-  
-  <!-- Js  -->
-  <script src="js/script.js"></script>
-</body>
+    
+      <!-- Js  -->
+    <script src="js/script.js"></script>
+  </body>   
 </html>
