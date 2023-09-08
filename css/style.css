@@ -2,7 +2,7 @@
   display: none;
 }
 
-#ticket .active {
-  display: block;
+#ticket.active {
+  display: flex;
 }
 
