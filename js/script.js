@@ -33,6 +33,10 @@ button1.addEventListener('click', function(){
 
 button2.addEventListener('click', function(){
   ticket.classList.remove('active');
+
+  nome.value = '';
+  kilometres.value = '';
+  age.value = '';
 });
 
 
